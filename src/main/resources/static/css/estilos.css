@@ -1,3 +1,13 @@
 body {
+    overflow-x: hidden;
     background-color: bisque;
+}
+
+.footer{
+    display: grid;
+    align-content: center;
+    color: white;
+    text-align: center;
+    height: 300px;
+    margin: 0;
 }
