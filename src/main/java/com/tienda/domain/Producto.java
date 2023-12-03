@@ -17,16 +17,15 @@ public class Producto implements Serializable {
     @Column(name="id_producto")
     private long idProducto;
     private String descripcion;
+    private String detalle;
+    private double precio;
+    private int existencias;
     private String rutaImagen;
     private Boolean activo;
 
-    public Producto() {
-    }
-
-    public Producto(String descripcion) {
-        this.descripcion = descripcion;
-        this.activo = activo;
-    }
+    @ManyToOne
+    @JoinColumn(name="id_categoria")
+    Categoria categoria;
 
     public boolean isActivo(){
         return activo;
