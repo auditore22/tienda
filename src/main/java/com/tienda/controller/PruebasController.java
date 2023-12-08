@@ -1,4 +1,4 @@
-package com.tienda;
+package com.tienda.controller;
 
 import com.tienda.domain.Categoria;
 import com.tienda.domain.Producto;

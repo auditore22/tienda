@@ -77,7 +77,7 @@
                             <tr><th>#</th>
                                 <th>[[#{categoria.descripcion}]]</th>
                                 <th>[[#{categoria.activo}]]</th>
-                                <th>sec:authorize="hasRole('ROLE_ADMIN')</th></tr>
+                                <th sec:authorize="hasRole('ROLE_ADMIN')"></th></tr>
                             </thead>
                             <tbody>
                             <tr th:each="categoria, contador : ${categorias}">
